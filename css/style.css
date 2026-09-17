@@ -92,7 +92,15 @@ hr{
     margin-inline: auto;
     border: 1px solid var(--header-bgcolor);
 }
-
+#score{
+    text-align: center;
+    max-width: 25%;
+    margin-inline: auto; 
+    background-color: var(--section-color);
+    padding: 2vh;
+    border-radius: 1.2rem;
+    color: var(--header-color);
+}
 button{
     display: block;
     margin: 4vh auto;
@@ -109,4 +117,7 @@ button{
 button:hover{
     background-color: var(--section-hover-color);
     transform: translateX(-6px);
+}
+button[hidden]{
+    display: none;
 }
