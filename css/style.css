@@ -1,0 +1,112 @@
+:root{
+    --header-bgcolor: #f19757;
+    --header-color: white;
+    --legend-bgcolor: white;
+    --section-color: #e86e16;
+    --fieldset-bgcolor: #fcba8b;
+    --fieldset-hover-bgcolor: #ffae74;
+    --section-hover-color: #b95812;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    width: clamp(10px, 5vw, 30px);
+    height: auto;
+}
+header{
+    text-align: center;
+    background-color: var(--header-bgcolor);
+    color: var(--header-color);
+    padding: 1vh;
+}
+section{
+    max-width: 50%;
+    margin-inline: auto; 
+    background-color: var(--section-color);
+    margin-top: 1vh;
+    text-align: center;
+    padding: 2vh;
+    border-radius: 1.2rem;
+    color: var(--header-color);
+    transition: all 0.3s ease;
+}
+
+section:hover{
+    background-color: var(--section-hover-color);
+    transform: translateX(-6px);
+}
+fieldset{
+    max-width: 50%;
+    margin-inline: auto;
+    margin-top: 1vh;
+    padding: 4rem;
+    border: 2px solid var(--header-bgcolor);
+    border-radius: 1.2rem;
+    background-color: var(--fieldset-bgcolor);
+    color: var(--section-color);
+    transition: all 0.3s ease;
+}
+fieldset:hover{
+    background-color: var(--fieldset-hover-bgcolor);
+    transform: translateX(-6px);
+}
+legend{
+    background-color: var(--legend-bgcolor);
+    padding: 1vh;
+    border: 2px dashed var(--header-bgcolor);
+    border-radius: 1.2rem;
+    color: var(--section-color);
+    font-weight: bold;
+}
+input[type="radio"] {
+    accent-color: var(--section-color);
+    width: clamp(14px, calc(12.18px + 0.568vw), 18px);
+    height: clamp(14px, calc(12.18px + 0.568vw), 18px);   
+    margin-right: 5px; 
+    cursor: pointer;
+}
+label {
+    display: flex;
+    padding: 1vh;
+    transition: all 0.3s ease;
+    border-radius: 1.2rem;
+}
+p{
+    padding: 0.5vh;
+}
+label:hover{
+    background-color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+hr{
+    margin-top: 2vh;
+    max-width: 75%;
+    margin-inline: auto;
+    border: 1px solid var(--header-bgcolor);
+}
+
+button{
+    display: block;
+    margin: 4vh auto;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50%;
+    background-color: var(--section-color);
+    color: var(--header-color);
+    border: none;
+    border-radius: 1.2rem;
+    padding: 2vh;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: var(--section-hover-color);
+    transform: translateX(-6px);
+}
